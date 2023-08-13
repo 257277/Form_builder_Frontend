@@ -1,0 +1,188 @@
+.container {
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#mainheading {
+    text-align: center;
+    color: rgb(28, 37, 212);
+}
+
+hr {
+    margin: 50px;
+}
+
+#FirstQuestionInput {
+    width: 50%;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#FirstQuestionInput:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.firstCategory {
+    width: 50%;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.firstCategory:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+button {
+
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow, transform;
+    background: radial-gradient(100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100%);
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+    padding: 0 32px;
+    border-radius: 6px;
+    color: #fff;
+    height: 48px;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    margin-top: 15px;
+
+
+}
+
+button :hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: inset 0px 3px 7px #3c4fe0;
+    transform: translateY(2px);
+}
+
+#ans1 {
+    width: 30%;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-bottom: 20px;
+    margin-right: 5%;
+}
+
+#ans1:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+#anscat {
+    width: 25%;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-bottom: 20px;
+    margin-right: 5%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+    border-color: #3c4fe0;
+    color: #5468FF;
+    font-size: 20px;
+    margin: auto;
+
+}
+
+th,
+tr,
+td {
+    text-align: center;
+    border: 2px solid #3041c3;
+}
+
+th {
+    background-color: #5462cb;
+    color: white;
+}
+
+#question2,
+#keyword,
+.question3input {
+    width: 50%;
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#question2:focus,
+#keyword:focus,
+.question3input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.Question3table {
+    width: 20%;
+    margin: auto;
+}
