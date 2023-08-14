@@ -1,5 +1,6 @@
 import style from "./createForm.module.css"
 import { useState,useEffect } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 
 
 export default function CreateForm()
@@ -156,6 +157,11 @@ export default function CreateForm()
     return (
 
         <div className={style.container}>
+          <button >
+          <Link to="/submit" >
+           Submit Form
+          </Link>
+        </button>
           <h1 id={style.mainheading}>Create Form</h1>
          <h1 className={style.questionHeading}>Question 1</h1>
          <input type="text" placeholder="Enter Question Text" onChange={(e)=>

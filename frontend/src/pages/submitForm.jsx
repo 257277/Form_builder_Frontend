@@ -1,5 +1,6 @@
 import style from "./submitForm.module.css"
 import { useState, useEffect } from "react"
+import { Link, useNavigate } from 'react-router-dom';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd"
 
 export default function SubmitForm() {
@@ -126,6 +127,11 @@ export default function SubmitForm() {
     return (
 
         <div id={style.container}>
+        <button >
+          <Link to="/" >
+           Create Form
+          </Link>
+        </button>
             <h1 className={style.heading}>Latest form</h1>
 
             <div>
