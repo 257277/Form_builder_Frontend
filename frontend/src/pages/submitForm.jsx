@@ -60,44 +60,29 @@ export default function SubmitForm() {
     }
     
 
-    const onDragEnd = (result, columns, setColumns) => {
+    const onDragEnd = (result) => {
         if (!result.destination) return;
         const { source, destination } = result;
+    
+        const updatedColumns = { ...columns };
+    
         if (source.droppableId !== destination.droppableId) {
-          const sourceColumn = columns[source.droppableId];
-          const destColumn = columns[destination.droppableId];
+          const sourceColumn = updatedColumns[source.droppableId];
+          const destColumn = updatedColumns[destination.droppableId];
           const sourceItems = [...sourceColumn.items];
           const destItems = [...destColumn.items];
           const [removed] = sourceItems.splice(source.index, 1);
           destItems.splice(destination.index, 0, removed);
-          setColumns({
-            ...columns,
-            [source.droppableId]: {
-              ...sourceColumn,
-              items: sourceItems,
-            },
-            [destination.droppableId]: {
-              ...destColumn,
-              items: destItems,
-            },
-          });
-        } 
-        else {
-          const column = columns[source.droppableId];
+          updatedColumns[source.droppableId].items = sourceItems;
+          updatedColumns[destination.droppableId].items = destItems;
+        } else {
+          const column = updatedColumns[source.droppableId];
           const copiedItems = [...column.items];
           const [removed] = copiedItems.splice(source.index, 1);
           copiedItems.splice(destination.index, 0, removed);
-          setColumns({
-            ...columns,
-            [source.droppableId]: {
-              ...column,
-              items: copiedItems,
-            },
-           
-          }
-          );
+          updatedColumns[source.droppableId].items = copiedItems;
         }
-        
+        setColumns(updatedColumns);
       };
  async function submit()
   {console.log({columns,answer2,selectedOptions})
